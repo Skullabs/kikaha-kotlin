@@ -1,0 +1,122 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>io.skullabs.kikaha</groupId>
+		<version>1.6.2</version>
+		<artifactId>kikaha-project</artifactId>
+	</parent>
+
+	<groupId>kikaha-kotlin</groupId>
+	<artifactId>kikaha-kotlin</artifactId>
+	<version>1.0.0-SNAPSHOT</version>
+	<packaging>jar</packaging>
+	<name>${project.artifactId}</name>
+
+	<properties>
+		<!-- project configurations -->
+		<kotlin.version>1.0.0-beta-4589</kotlin.version>
+		<config.dir.source>source</config.dir.source>
+		<config.dir.resource>resources</config.dir.resource>
+		<config.dir.test.source>tests</config.dir.test.source>
+		<config.dir.test.resource>tests-resources</config.dir.test.resource>
+		<config.dir.output>output</config.dir.output>
+		<config.dir.web>webapp</config.dir.web>
+		<!-- dependencies version configuration -->
+		<version.kotlin>1.0.0-beta-4589</version.kotlin>
+	</properties>
+
+	<dependencies>
+		<!-- Kikaha Core Dependencies -->
+		<dependency>
+			<groupId>io.skullabs.kikaha</groupId>
+			<artifactId>kikaha-core</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>io.skullabs.kikaha</groupId>
+			<artifactId>kikaha-jsr-330</artifactId>
+		</dependency>
+		<!-- micro Routing Dependencies -->
+		<dependency>
+			<groupId>io.skullabs.kikaha</groupId>
+			<artifactId>kikaha-urouting</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>io.skullabs.kikaha</groupId>
+			<artifactId>kikaha-urouting-jackson</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>io.skullabs.kikaha</groupId>
+			<artifactId>kikaha-urouting-mustache</artifactId>
+		</dependency>
+		<!-- Logging dependencies -->
+		<dependency>
+			<groupId>ch.qos.logback</groupId>
+			<artifactId>logback-classic</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.jetbrains.kotlin</groupId>
+			<artifactId>kotlin-stdlib</artifactId>
+			<version>${version.kotlin}</version>
+		</dependency>
+	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<artifactId>kotlin-maven-plugin</artifactId>
+				<groupId>org.jetbrains.kotlin</groupId>
+				<version>${version.kotlin}</version>
+				<executions>
+					<execution>
+						<id>compile</id>
+						<phase>process-sources</phase>
+						<goals>
+							<goal>compile</goal>
+						</goals>
+					</execution>
+					<execution>
+						<id>test-compile</id>
+						<phase>process-test-classes</phase>
+						<goals>
+							<goal>test-compile</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
+				<groupId>io.skullabs.apt</groupId>
+				<artifactId>apt-runner-maven-plugin</artifactId>
+				<version>0.0.1-SNAPSHOT</version>
+				<executions>
+					<execution>
+						<id>compile</id>
+						<phase>process-sources</phase>
+						<goals>
+							<goal>force-run-apt</goal>
+						</goals>
+						<configuration>
+							<compileClassesDirectory>${project.build.outputDirectory}</compileClassesDirectory>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+				<plugin>
+					<inherited>true</inherited>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-compiler-plugin</artifactId>
+					<configuration>
+						<source>1.8</source>
+						<target>1.8</target>
+						<optimize>true</optimize>
+						<debug>false</debug>
+						<encoding>${config.encoding.source}</encoding>
+						<generatedTestSourcesDirectory>${project.build.directory}/generated-test-sources/annotations</generatedTestSourcesDirectory>
+						<generatedSourcesDirectory>${project.build.directory}/generated-sources/annotations</generatedSourcesDirectory>
+					</configuration>
+				</plugin>
+		</plugins>
+	</build>
+
+</project>

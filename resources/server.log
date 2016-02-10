@@ -1,0 +1,95 @@
+16:10:07.116 WARN  - The DefaultSecurityContextFactory isn't designed for production proposes. Please consider using the HazelcastSecurityContextFactory.
+16:10:07.127 INFO  - Looking for HttpHandler routes...
+16:10:07.146 INFO  -   > Registering route: GET:/{templatePath}.do
+16:10:07.148 INFO  - Deploying WebSocket resources...
+16:10:07.150 INFO  - Exposing resource files at /home/miere/Development/Skullabs/kikaha-cli/plugins/project/webapp
+16:10:07.164 INFO  - Configuring Undertow options...
+16:10:07.165 INFO  -   > worker-threads: 200
+16:10:07.165 INFO  -   > buffer-size: 16384
+16:10:07.174 INFO  -   > found :io.undertow.UndertowOptions.ENABLE_CONNECTOR_STATISTICS: false
+16:10:07.175 INFO  -   > found :io.undertow.UndertowOptions.RECORD_REQUEST_START_TIME: false
+16:10:07.207 INFO  - XNIO version 3.3.1.Final
+16:10:07.266 INFO  - XNIO NIO Implementation Version 3.3.1.Final
+16:10:07.343 INFO  - Server started in 244ms.
+16:10:07.343 INFO  - Server is listening HTTP at 0.0.0.0:9000
+16:10:41.521 INFO  - Server stopped!
+16:11:40.768 WARN  - The DefaultSecurityContextFactory isn't designed for production proposes. Please consider using the HazelcastSecurityContextFactory.
+16:11:40.782 INFO  - Looking for HttpHandler routes...
+16:11:40.802 INFO  -   > Registering route: GET:/{templatePath}.do
+16:11:40.804 INFO  - Deploying WebSocket resources...
+16:11:40.806 INFO  - Exposing resource files at /home/miere/Development/Skullabs/kikaha-cli/plugins/project/webapp
+16:11:40.819 INFO  - Configuring Undertow options...
+16:11:40.820 INFO  -   > worker-threads: 200
+16:11:40.820 INFO  -   > buffer-size: 16384
+16:11:40.830 INFO  -   > found :io.undertow.UndertowOptions.ENABLE_CONNECTOR_STATISTICS: false
+16:11:40.831 INFO  -   > found :io.undertow.UndertowOptions.RECORD_REQUEST_START_TIME: false
+16:11:40.862 INFO  - XNIO version 3.3.1.Final
+16:11:40.922 INFO  - XNIO NIO Implementation Version 3.3.1.Final
+16:11:40.994 INFO  - Server started in 245ms.
+16:11:40.995 INFO  - Server is listening HTTP at 0.0.0.0:9000
+16:11:41.395 INFO  - Server stopped!
+16:12:25.668 WARN  - The DefaultSecurityContextFactory isn't designed for production proposes. Please consider using the HazelcastSecurityContextFactory.
+16:12:25.678 INFO  - Looking for HttpHandler routes...
+16:12:25.698 INFO  -   > Registering route: GET:/{templatePath}.do
+16:12:25.700 INFO  - Deploying WebSocket resources...
+16:12:25.703 INFO  - Exposing resource files at /home/miere/Development/Skullabs/kikaha-cli/plugins/project/webapp
+16:12:25.720 INFO  - Configuring Undertow options...
+16:12:25.720 INFO  -   > worker-threads: 200
+16:12:25.721 INFO  -   > buffer-size: 16384
+16:12:25.731 INFO  -   > found :io.undertow.UndertowOptions.ENABLE_CONNECTOR_STATISTICS: false
+16:12:25.732 INFO  -   > found :io.undertow.UndertowOptions.RECORD_REQUEST_START_TIME: false
+16:12:25.779 INFO  - XNIO version 3.3.1.Final
+16:12:25.852 INFO  - XNIO NIO Implementation Version 3.3.1.Final
+16:12:25.927 INFO  - Server started in 272ms.
+16:12:25.928 INFO  - Server is listening HTTP at 0.0.0.0:9000
+16:12:36.986 INFO  - Server stopped!
+01:09:56.641 WARN  - The DefaultSecurityContextFactory isn't designed for production proposes. Please consider using the HazelcastSecurityContextFactory.
+01:09:56.653 INFO  - Looking for HttpHandler routes...
+01:09:56.918 INFO  -   > Registering route: GET:/{templatePath}.do
+01:09:56.921 INFO  -   > Registering route: GET:/test
+01:09:56.921 INFO  - Deploying WebSocket resources...
+01:09:56.923 INFO  - Exposing resource files at /home/miere/Development/Skullabs/trainning/kikaha-kotlin/webapp
+01:09:56.961 INFO  - Configuring Undertow options...
+01:09:56.962 INFO  -   > worker-threads: 200
+01:09:56.962 INFO  -   > buffer-size: 16384
+01:09:56.985 INFO  -   > found :io.undertow.UndertowOptions.ENABLE_CONNECTOR_STATISTICS: false
+01:09:56.986 INFO  -   > found :io.undertow.UndertowOptions.RECORD_REQUEST_START_TIME: false
+01:09:57.012 INFO  - XNIO version 3.3.1.Final
+01:09:57.173 INFO  - XNIO NIO Implementation Version 3.3.1.Final
+01:09:57.250 INFO  - Server started in 653ms.
+01:09:57.250 INFO  - Server is listening HTTP at 0.0.0.0:9000
+01:10:09.194 ERROR - Unhandled exception
+java.lang.IllegalArgumentException: Parameter specified as non-null is null: method samples.UserResource.sayHello, parameter name
+	at samples.UserResource.sayHello(UserResource.kt) ~[kikaha-kotlin-1.0.0-SNAPSHOT.jar:na]
+	at samples.GeneratedRoutingMethod1895095708.handleRequest(GeneratedRoutingMethod1895095708.java:31) ~[kikaha-kotlin-1.0.0-SNAPSHOT.jar:na]
+	at io.undertow.server.Connectors.executeRootHandler(Connectors.java:199) [undertow-core-1.2.12.Final.jar:1.2.12.Final]
+	at io.undertow.server.HttpServerExchange$1.run(HttpServerExchange.java:774) [undertow-core-1.2.12.Final.jar:1.2.12.Final]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_31]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_31]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_31]
+01:10:34.830 ERROR - Unhandled exception
+java.lang.IllegalArgumentException: Parameter specified as non-null is null: method samples.UserResource.sayHello, parameter name
+	at samples.UserResource.sayHello(UserResource.kt) ~[kikaha-kotlin-1.0.0-SNAPSHOT.jar:na]
+	at samples.GeneratedRoutingMethod1895095708.handleRequest(GeneratedRoutingMethod1895095708.java:31) ~[kikaha-kotlin-1.0.0-SNAPSHOT.jar:na]
+	at io.undertow.server.Connectors.executeRootHandler(Connectors.java:199) [undertow-core-1.2.12.Final.jar:1.2.12.Final]
+	at io.undertow.server.HttpServerExchange$1.run(HttpServerExchange.java:774) [undertow-core-1.2.12.Final.jar:1.2.12.Final]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_31]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_31]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_31]
+01:12:28.268 INFO  - Server stopped!
+01:12:40.260 WARN  - The DefaultSecurityContextFactory isn't designed for production proposes. Please consider using the HazelcastSecurityContextFactory.
+01:12:40.284 INFO  - Looking for HttpHandler routes...
+01:12:40.595 INFO  -   > Registering route: GET:/{templatePath}.do
+01:12:40.599 INFO  -   > Registering route: GET:/test
+01:12:40.599 INFO  - Deploying WebSocket resources...
+01:12:40.602 INFO  - Exposing resource files at /home/miere/Development/Skullabs/trainning/kikaha-kotlin/webapp
+01:12:40.623 INFO  - Configuring Undertow options...
+01:12:40.624 INFO  -   > worker-threads: 200
+01:12:40.624 INFO  -   > buffer-size: 16384
+01:12:40.655 INFO  -   > found :io.undertow.UndertowOptions.ENABLE_CONNECTOR_STATISTICS: false
+01:12:40.657 INFO  -   > found :io.undertow.UndertowOptions.RECORD_REQUEST_START_TIME: false
+01:12:40.707 INFO  - XNIO version 3.3.1.Final
+01:12:40.811 INFO  - XNIO NIO Implementation Version 3.3.1.Final
+01:12:40.960 INFO  - Server started in 765ms.
+01:12:40.960 INFO  - Server is listening HTTP at 0.0.0.0:9000
+01:14:31.140 INFO  - Server stopped!
