@@ -7,11 +7,11 @@ import javax.inject.Inject
 import javax.inject.Singleton
 
 @Singleton
-public class UserResource {
+class UserResource {
 
 	@GET
 	@Path("test")
-	public fun sayHello( @QueryParam("name") name:String ):String {
+	fun sayHello( @QueryParam("name") name:String ):String {
 		return "Hello $name"
 	}
 }

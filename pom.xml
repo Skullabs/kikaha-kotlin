@@ -16,7 +16,7 @@
 
 	<properties>
 		<!-- project configurations -->
-		<kotlin.version>1.0.0-beta-4589</kotlin.version>
+		<kotlin.version>1.0.0</kotlin.version>
 		<config.dir.source>source</config.dir.source>
 		<config.dir.resource>resources</config.dir.resource>
 		<config.dir.test.source>tests</config.dir.test.source>
@@ -24,7 +24,7 @@
 		<config.dir.output>output</config.dir.output>
 		<config.dir.web>webapp</config.dir.web>
 		<!-- dependencies version configuration -->
-		<version.kotlin>1.0.0-beta-4589</version.kotlin>
+		<version.kotlin>1.0.0</version.kotlin>
 	</properties>
 
 	<dependencies>
